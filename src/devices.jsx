@@ -1,13 +1,26 @@
 import { useEffect, useState } from 'react';
+import { Data, getData } from './data.js';
 
-export function DeviceDescriptor({ipAddress, Id}) {
+export function DeviceDescriptor({ipAddress, id}) {
 	return (
 		<>
-			
+			<tr>
+				<tr>{id}</tr>
+				<tr>{ipAddress}</tr>
+			</tr>
 		</>
 	)
 }
 
 export default function DevicesPage() {
-	return <h1>Devices</h1>
+	const [hasData, setHasData] = useState(true);
+	const [data, setData] = useState<Data[]>();
+
+	
+
+	return (
+		<>
+			<h1>-DEVICES-</h1>
+		</>
+	);
 }

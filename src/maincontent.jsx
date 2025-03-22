@@ -1,19 +1,19 @@
 import DevicesPage from './devices.jsx'
-import TraffickPage from './traffick.jsx'
+import TraffickPage from './traffic.jsx'
 import DDOSPage from './ddos.jsx'
 import DropPage from './drop.jsx'
 
 export default function MainContent({content}) {
-	// content = "Devices" | "Traffick" | "DDOS" | "Drop"
+	// content = "Devices" | "Traffic" | "DDOS" | "Drop"
 
 	if (content == "Devices") {
 		return (
 			<DevicesPage />
 		)
 	}
-	if (content == "Traffick") {
+	if (content == "Traffic") {
 		return (
-			<TraffickPage />
+			<TrafficPage />
 		)
 	}
 	if (content == "DDOS") {
