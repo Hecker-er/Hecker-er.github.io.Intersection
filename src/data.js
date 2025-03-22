@@ -1,11 +1,7 @@
 const API_URL = ''
-
-export interface Data {
 	
-}
-
-export async function getData(): Promise {
-	const data: = await fetch(/*Put Url Here */{
+export async function getData() {
+	const data = await fetch("/",{
 		method: "POST"
-})
+	})
 }

@@ -6,7 +6,7 @@ export function SidebarButton({ title, setPage }) {
 export default function Sidebar({setPage}) {
 	return (
 	<>
-		<div class="sidebar-buttons">
+		<div className="sidebar-buttons">
 			<SidebarButton title="Devices" setPage={setPage} />
 			<SidebarButton title="Traffick" setPage={setPage} />
 			<SidebarButton title="DDOS" setPage={setPage} />
