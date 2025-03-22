@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import Sidebar from './sidebar.jsx'
+import MainContent from './maincontent.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+const [pageState, setPageState] = useState("Devices");
 
   return (
     <>
-		<Sidebar />
+		<Sidebar setPage={ setPageState } />
+		<MainContent content={ pageState } />
     </>
   )
 }

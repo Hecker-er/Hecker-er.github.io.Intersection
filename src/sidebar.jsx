@@ -1,12 +1,17 @@
-export function Button({ title }) {
-	return <button>{title}</button>
+export function SidebarButton({ title, setPage }) {
+	return <button onClick={() => setPage(title)}>{title}</button>
 };
 
-export default function Sidebar() {
+
+export default function Sidebar({setPage}) {
 	return (
 	<>
-		<Button title="Devices" />
-		<Button title="Traffick" />
+		<div class="sidebar-buttons">
+			<SidebarButton title="Devices" setPage={setPage} />
+			<SidebarButton title="Traffick" setPage={setPage} />
+			<SidebarButton title="DDOS" setPage={setPage} />
+			<SidebarButton title="Drop" setPage={setPage} />
+		</div>
 	</>
 	)
 };
