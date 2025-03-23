@@ -8,7 +8,7 @@ export default function Sidebar({setPage}) {
 	<>
 		<div className="sidebar-buttons">
 			<SidebarButton title="Devices" setPage={setPage} />
-			<SidebarButton title="Traffick" setPage={setPage} />
+			<SidebarButton title="Traffic" setPage={setPage} />
 			<SidebarButton title="DDOS" setPage={setPage} />
 			<SidebarButton title="Drop" setPage={setPage} />
 		</div>

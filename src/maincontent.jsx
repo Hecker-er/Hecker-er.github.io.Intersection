@@ -1,5 +1,5 @@
 import DevicesPage from './devices.jsx'
-import TraffickPage from './traffic.jsx'
+import TrafficPage from './traffic.jsx'
 import DDOSPage from './ddos.jsx'
 import DropPage from './drop.jsx'
 
