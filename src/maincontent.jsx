@@ -27,5 +27,9 @@ export default function MainContent({content}) {
 		)
 	}
 
-	return <p>{content}</p>
+	return (
+		<div class="main-content">
+			<p>{content}</p>
+		</div>
+	)
 }

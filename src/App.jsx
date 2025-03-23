@@ -7,9 +7,13 @@ function App() {
 const [pageState, setPageState] = useState("Devices");
 
   return (
-    <>
-		<Sidebar setPage={ setPageState } />
-		<MainContent content={ pageState } />
+  	<>
+		<div class="full-page">
+			<div class="sidebar">
+				<Sidebar setPage={ setPageState } />
+			</div>
+			<MainContent content={ pageState } />
+		</div>
     </>
   )
 }
