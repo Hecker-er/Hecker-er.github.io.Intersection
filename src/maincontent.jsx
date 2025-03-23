@@ -2,6 +2,7 @@ import DevicesPage from './devices.jsx'
 import TrafficPage from './traffic.jsx'
 import DDOSPage from './ddos.jsx'
 import DropPage from './drop.jsx'
+import './App.css'
 
 export default function MainContent({content}) {
 	// content = "Devices" | "Traffic" | "DDOS" | "Drop"
@@ -28,8 +29,10 @@ export default function MainContent({content}) {
 	}
 
 	return (
-		<div class="main-content">
-			<p>{content}</p>
-		</div>
+		<>
+			<div class="main-content">
+				<p>{content}</p>
+			</div>
+		</>
 	)
 }

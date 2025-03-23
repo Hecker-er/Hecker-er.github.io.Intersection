@@ -8,11 +8,13 @@ const [pageState, setPageState] = useState("Devices");
 
   return (
   	<>
-		<div class="full-page">
-			<div class="sidebar">
+		<div className="full-page">
+			<div className="sidebar">
 				<Sidebar setPage={ setPageState } />
 			</div>
-			<MainContent content={ pageState } />
+			<div className="main-content">
+				<MainContent content={ pageState } />
+			</div>
 		</div>
     </>
   )

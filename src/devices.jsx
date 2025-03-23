@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { data, getData } from './data.js';
+import { getData } from './data.js';
 
 export function DeviceDescriptor({ipAddress, id}) {
 	return (
@@ -13,14 +13,14 @@ export function DeviceDescriptor({ipAddress, id}) {
 }
 
 export default function DevicesPage() {
-	const [hasData, setHasData] = useState(true);
+	const [hasData, setHasData] = useState(false);
 	const [data, setData] = useState();
 
 	useEffect(() => {
 		async function fetchData() {
 			const fetchedData = await getData();
 			setData(fetchedData);
-			setHasData(false);
+			setHasData(true);
 		}
 		fetchData();
 	}, []); 
